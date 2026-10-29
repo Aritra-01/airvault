@@ -1,0 +1,16 @@
+{
+  "name": "airvault-android",
+  "version": "1.0.0",
+  "description": "AirVault Android App Wrapper",
+  "scripts": {
+    "init": "npx cap init AirVault com.airvault.app --web-dir ../public",
+    "add": "npx cap add android",
+    "open": "npx cap open android",
+    "build": "npx cap update android && npx cap build android"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/android": "^5.0.0"
+  }
+}

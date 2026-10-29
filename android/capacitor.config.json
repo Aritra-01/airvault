@@ -1,0 +1,6 @@
+{
+  "appId": "com.airvault.app",
+  "appName": "AirVault",
+  "webDir": "../public",
+  "bundledWebRuntime": false
+}
