@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirVault — Instant Local Network File Server & Media Streamer</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    nav a { color: var(--text-muted); text-decoration: none; margin-left: 24px; transition: color 0.2s; }
+    nav a:hover { color: var(--text); }
+    .hero {
+      max-width: 850px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 0 24px;
+    }
+    .hero h1 { font-size: 3.75rem; font-weight: 800; margin-bottom: 20px; letter-spacing: -1.5px; }
+    .hero h1 span { color: var(--primary); }
+    .hero p { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 36px; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn:hover { background: var(--primary-hover); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--text-muted);
+      color: var(--text);
+    }
+    .btn-outline:hover { background: rgba(255, 255, 255, 0.05); }
+    .features {
+      max-width: 1100px;
+      margin: 100px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      padding: 36px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .feature-card h3 { font-size: 1.25rem; margin-bottom: 12px; color: #fff; }
+    .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
+    footer { text-align: center; padding: 48px 24px; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">⚡ AirVault</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="https://gitlab.com/username/airvault" target="_blank">GitLab Repo</a>
+      <a href="https://gitlab.com/username/airvault/-/releases" target="_blank">Releases (.exe / .apk)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Stream Anything on Your Wi-Fi with <span>AirVault</span></h1>
+    <p>Turn any PC or device into an ultra-fast local network server. Stream movies, browse folders, and download files instantly across all devices on the same Wi-Fi.</p>
+    <div class="cta-buttons">
+      <a href="https://gitlab.com/username/airvault/-/releases" class="btn" target="_blank">Download Windows .exe & Android .apk</a>
+      <a href="https://gitlab.com/username/airvault" class="btn btn-outline" target="_blank">View GitLab Source</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>🚀 Zero-Config LAN Sharing</h3>
+      <p>Instantly starts a local server on your Wi-Fi network. Access your entire PC directory from your phone, tablet, or smart TV via browser.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎬 Self-Adjusting Media Player</h3>
+      <p>Built-in video and audio streamer supporting range requests, playback speed control, full-screen, and seamless seeking.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📥 Dedicated Downloads</h3>
+      <p>One-click direct file downloads for any document, media, archive, or folder across your local network.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 AirVault. Open Source MIT License • Hosted on GitLab Pages.</p>
+  </footer>
+</body>
+</html>
